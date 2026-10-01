@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glowIndigo">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="0" y1="600" x2="1280" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="720"/>
+    <line x1="400" y1="0" x2="400" y2="720"/>
+    <line x1="600" y1="0" x2="600" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="1000" y1="0" x2="1000" y2="720"/>
+  </g>
+
+  <!-- Top Navigation Header -->
+  <rect x="40" y="30" width="1200" height="60" rx="12" fill="#171e2e" stroke="#28354d" stroke-width="1"/>
+  <circle cx="70" cy="60" r="10" fill="#6366f1" filter="url(#glowIndigo)"/>
+  <text x="95" y="66" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">SKILLPILOT AI</text>
+  <text x="250" y="65" fill="#64748b" font-family="sans-serif" font-size="13">AI-Powered Dynamic Course & Curriculum Generator · MERN Architecture</text>
+
+  <rect x="1050" y="45" width="170" height="30" rx="15" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="1065" y="65" fill="#e0e7ff" font-family="sans-serif" font-size="12" font-weight="600">Auth0 OAuth 2.0 PKCE</text>
+
+  <!-- KPI Cards -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="280" height="90" rx="10" fill="#151d2c" stroke="#253248" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">API CALL REDUCTION</text>
+    <text x="20" y="68" fill="#818cf8" font-family="sans-serif" font-size="28" font-weight="700">95%</text>
+    <text x="100" y="65" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600">from 21 to 1 call</text>
+
+    <rect x="306" y="0" width="280" height="90" rx="10" fill="#151d2c" stroke="#253248" stroke-width="1"/>
+    <text x="326" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">BUNDLE SIZE (GZIPPED)</text>
+    <text x="326" y="68" fill="#38bdf8" font-family="sans-serif" font-size="28" font-weight="700">146 kB</text>
+    <text x="445" y="65" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600">Dynamic Splitting</text>
+
+    <rect x="613" y="0" width="280" height="90" rx="10" fill="#151d2c" stroke="#253248" stroke-width="1"/>
+    <text x="633" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">LLM RECOVERY LAYER</text>
+    <text x="633" y="68" fill="#fb7185" font-family="sans-serif" font-size="28" font-weight="700">2 Retries</text>
+    <text x="765" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">JSON Fix Chain</text>
+
+    <rect x="920" y="0" width="280" height="90" rx="10" fill="#151d2c" stroke="#253248" stroke-width="1"/>
+    <text x="940" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">TEST SUITE & CI/CD</text>
+    <text x="940" y="68" fill="#34d399" font-family="sans-serif" font-size="28" font-weight="700">21 Tests</text>
+    <text x="1065" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">2.7s run time</text>
+  </g>
+
+  <!-- Left: Course Generator UI Preview -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="760" height="460" rx="12" fill="#141a29" stroke="#242f44" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="600">Generated Course Structure: "Full Stack Deep Learning"</text>
+    <text x="25" y="55" fill="#64748b" font-family="sans-serif" font-size="12">Gemini 1.5 Flash Structured JSON Output with Automatic Validation</text>
+
+    <!-- Module 1 -->
+    <rect x="25" y="80" width="710" height="95" rx="8" fill="#1a2337" stroke="#2d3b55" stroke-width="1"/>
+    <rect x="40" y="95" width="24" height="24" rx="6" fill="#4338ca"/>
+    <text x="48" y="112" fill="#fff" font-family="sans-serif" font-size="12" font-weight="700">1</text>
+    <text x="75" y="112" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="600">Module 1: Foundations of Distributed Training</text>
+    <text x="75" y="132" fill="#94a3b8" font-family="sans-serif" font-size="11">• DataParallel vs DistributedDataParallel (DDP) • Gradient AllReduce Synchronization</text>
+    <rect x="620" y="95" width="100" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="635" y="112" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="600">✓ 4 Lessons</text>
+
+    <!-- Module 2 -->
+    <rect x="25" y="190" width="710" height="95" rx="8" fill="#1a2337" stroke="#2d3b55" stroke-width="1"/>
+    <rect x="40" y="205" width="24" height="24" rx="6" fill="#6366f1"/>
+    <text x="48" y="222" fill="#fff" font-family="sans-serif" font-size="12" font-weight="700">2</text>
+    <text x="75" y="222" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="600">Module 2: Parameter-Efficient Fine-Tuning (PEFT & QLoRA)</text>
+    <text x="75" y="242" fill="#94a3b8" font-family="sans-serif" font-size="11">• 4-bit NF4 Quantization • LoRA Rank Adapters • Memory Optimization with FlashAttention</text>
+    <rect x="620" y="205" width="100" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="635" y="222" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="600">✓ 5 Lessons</text>
+
+    <!-- Module 3 -->
+    <rect x="25" y="300" width="710" height="95" rx="8" fill="#1a2337" stroke="#2d3b55" stroke-width="1"/>
+    <rect x="40" y="315" width="24" height="24" rx="6" fill="#8b5cf6"/>
+    <text x="48" y="332" fill="#fff" font-family="sans-serif" font-size="12" font-weight="700">3</text>
+    <text x="75" y="332" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="600">Module 3: Production LLM Serving & Observability</text>
+    <text x="75" y="352" fill="#94a3b8" font-family="sans-serif" font-size="11">• vLLM PagedAttention • Continuous Batching • RAG Retrieval with ChromaDB & LangChain</text>
+    <rect x="620" y="315" width="100" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="635" y="332" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="600">✓ 6 Lessons</text>
+
+    <!-- Bottom Actions -->
+    <g transform="translate(25, 410)">
+      <rect x="0" y="0" width="160" height="34" rx="8" fill="#4f46e5"/>
+      <text x="25" y="22" fill="#fff" font-family="sans-serif" font-size="12" font-weight="600">Export PDF Syllabus</text>
+
+      <rect x="175" y="0" width="160" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="200" y="22" fill="#cbd5e1" font-family="sans-serif" font-size="12">Interactive Quiz Mode</text>
+    </g>
+  </g>
+
+  <!-- Right: Architecture Stack & Fault Tolerance -->
+  <g transform="translate(820, 220)">
+    <rect x="0" y="0" width="420" height="460" rx="12" fill="#141a29" stroke="#242f44" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="600">Architecture & Resiliency Layer</text>
+
+    <!-- Stack Box 1 -->
+    <rect x="25" y="65" width="370" height="70" rx="8" fill="#171f33" stroke="#2c3b57" stroke-width="1"/>
+    <text x="40" y="90" fill="#a5b4fc" font-family="sans-serif" font-size="12" font-weight="600">Frontend (React + Code-Splitting)</text>
+    <text x="40" y="110" fill="#94a3b8" font-family="sans-serif" font-size="11">Lazy loaded jsPDF & html2canvas stack across 15 components</text>
+    <text x="40" y="125" fill="#34d399" font-family="sans-serif" font-size="10">Bundle reduced to 146 kB gzipped</text>
+
+    <!-- Stack Box 2 -->
+    <rect x="25" y="150" width="370" height="70" rx="8" fill="#171f33" stroke="#2c3b57" stroke-width="1"/>
+    <text x="40" y="175" fill="#818cf8" font-family="sans-serif" font-size="12" font-weight="600">Fault-Tolerant JSON Recovery Parser</text>
+    <text x="40" y="195" fill="#94a3b8" font-family="sans-serif" font-size="11">Repairs malformed LLM outputs, handles 429/503 rate limits</text>
+    <text x="40" y="210" fill="#38bdf8" font-family="sans-serif" font-size="10">2-attempt fallback retry chain</text>
+
+    <!-- Stack Box 3 -->
+    <rect x="25" y="235" width="370" height="70" rx="8" fill="#171f33" stroke="#2c3b57" stroke-width="1"/>
+    <text x="40" y="260" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">Security & API Gateway</text>
+    <text x="40" y="280" fill="#94a3b8" font-family="sans-serif" font-size="11">Auth0 OAuth 2.0 PKCE, JWT middleware, 30 req/10 min rate limiting</text>
+    <text x="40" y="295" fill="#a78bfa" font-family="sans-serif" font-size="10">10 Express REST API Endpoints</text>
+
+    <!-- Stack Box 4 -->
+    <rect x="25" y="320" width="370" height="115" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="40" y="348" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">CI/CD & Testing Pipeline</text>
+    <text x="40" y="375" fill="#94a3b8" font-family="sans-serif" font-size="11">• 21 unit tests running in 2.7 seconds</text>
+    <text x="40" y="398" fill="#94a3b8" font-family="sans-serif" font-size="11">• Automated GitHub Actions test & build workflow</text>
+    <text x="40" y="420" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600">• Zero-downtime MongoDB Atlas deployment</text>
+  </g>
+</svg>
+

@@ -1,0 +1,10 @@
+import { motion } from "framer-motion";
+
+const categories = [
+  { title: "DATA ANALYTICS & BI", skills: ["SQL", "MS Excel", "Python", "Pandas", "NumPy", "Matplotlib", "Tableau", "Power BI", "Redash", "Metabase", "Google Analytics", "Amplitude", "CleverTap"] },
+  { title: "MACHINE LEARNING & STATISTICS", skills: ["Scikit-learn", "PyTorch", "TensorFlow", "Keras", "NLTK", "Transformers", "Time Series", "Forecasting", "A/B Testing", "Cohort Analysis", "Anomaly Detection"] },
+  { title: "DATA & AI ENGINEERING", skills: ["MySQL", "SQL Server", "ETL", "Data Modeling", "FastAPI", "LangChain", "LangGraph", "RAG", "Jupyter Notebook", "Google Colab"] },
+  { title: "PRODUCT & COLLABORATION", skills: ["Product Analytics", "User Research", "Figma", "JIRA", "Notion", "Git", "GitHub", "Docker", "C", "C++"] },
+];
+const Skills = () => <section className="py-24 px-4 overflow-hidden"><motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .6 }} className="text-center mb-16"><p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">What I work with</p><h2 className="text-4xl md:text-6xl font-bold">Skills & <span className="font-serif-italic text-accent">Expertise</span></h2></motion.div><div className="max-w-6xl mx-auto space-y-12">{categories.map((category, index) => <div key={category.title}><h3 className="text-center text-xs md:text-sm font-bold text-primary tracking-[0.25em] mb-5">{category.title}</h3><motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .4, delay: index * .1 }} className="flex flex-wrap justify-center gap-2.5 max-w-4xl mx-auto">{category.skills.map((skill) => <span key={skill} className="px-4 py-2 rounded-full border border-border bg-secondary/40 text-xs md:text-sm hover:bg-secondary/80 hover:border-primary/40 transition-all">{skill}</span>)}</motion.div></div>)}</div></section>;
+export default Skills;

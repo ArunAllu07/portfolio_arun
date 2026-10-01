@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0e1f"/>
+      <stop offset="100%" stop-color="#18152e"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glowPink">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="0" y1="600" x2="1280" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="720"/>
+    <line x1="400" y1="0" x2="400" y2="720"/>
+    <line x1="600" y1="0" x2="600" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="1000" y1="0" x2="1000" y2="720"/>
+  </g>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1200" height="60" rx="12" fill="#1e1c3a" stroke="#35325e" stroke-width="1"/>
+  <circle cx="70" cy="60" r="10" fill="#ec4899" filter="url(#glowPink)"/>
+  <text x="95" y="66" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">KAHANI KIDS AI | MOBILE &amp; ANALYTICS PLATFORM</text>
+  <text x="540" y="65" fill="#94a3b8" font-family="sans-serif" font-size="13">React Native Mobile App · React Admin Analytics Dashboard · Singapore</text>
+
+  <rect x="1070" y="45" width="150" height="30" rx="15" fill="#4c0519" stroke="#be123c" stroke-width="1"/>
+  <text x="1085" y="65" fill="#fecdd3" font-family="sans-serif" font-size="12" font-weight="600">100K+ Downloads</text>
+
+  <!-- Metrics -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="280" height="90" rx="10" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">PLAY STORE INSTALLS</text>
+    <text x="20" y="68" fill="#f472b6" font-family="sans-serif" font-size="28" font-weight="700">100,000+</text>
+    <text x="170" y="65" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600">Global Users</text>
+
+    <rect x="306" y="0" width="280" height="90" rx="10" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+    <text x="326" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">ANALYTICS MODULES</text>
+    <text x="326" y="68" fill="#c084fc" font-family="sans-serif" font-size="28" font-weight="700">5+ Suites</text>
+    <text x="460" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">DAU &amp; Story KPIs</text>
+
+    <rect x="613" y="0" width="280" height="90" rx="10" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+    <text x="633" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">BACKEND REST ENDPOINTS</text>
+    <text x="633" y="68" fill="#38bdf8" font-family="sans-serif" font-size="28" font-weight="700">20+ APIs</text>
+    <text x="750" y="65" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600">Auth &amp; Stories</text>
+
+    <rect x="920" y="0" width="280" height="90" rx="10" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+    <text x="940" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">API COST OPTIMIZATION</text>
+    <text x="940" y="68" fill="#34d399" font-family="sans-serif" font-size="28" font-weight="700">-35% Cost</text>
+    <text x="1080" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">Cached Gen</text>
+  </g>
+
+  <!-- Left: Admin Analytics Dashboard -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="760" height="460" rx="12" fill="#171430" stroke="#2d2950" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="600">Admin Growth &amp; Daily Active Storyteller Analytics</text>
+    <text x="25" y="55" fill="#64748b" font-family="sans-serif" font-size="12">Real-Time Event Tracking: Story Generation, Audio Playback, and Community Shares</text>
+
+    <!-- Chart Box -->
+    <rect x="25" y="75" width="710" height="230" rx="8" fill="#1c193b" stroke="#332e5c" stroke-width="1"/>
+    
+    <!-- DAU Chart Line -->
+    <g transform="translate(40, 95)">
+      <text x="0" y="15" fill="#f472b6" font-family="sans-serif" font-size="13" font-weight="600">DAU Growth &amp; Generation Volume (Last 30 Days)</text>
+      
+      <!-- Grid lines -->
+      <line x1="40" y1="50" x2="640" y2="50" stroke="#2d2852" stroke-width="1"/>
+      <line x1="40" y1="100" x2="640" y2="100" stroke="#2d2852" stroke-width="1"/>
+      <line x1="40" y1="150" x2="640" y2="150" stroke="#2d2852" stroke-width="1"/>
+
+      <!-- Path curve -->
+      <path d="M 40 140 Q 140 130 240 100 T 440 60 T 640 40 L 640 170 L 40 170 Z" fill="#ec4899" fill-opacity="0.15"/>
+      <path d="M 40 140 Q 140 130 240 100 T 440 60 T 640 40" fill="none" stroke="#f472b6" stroke-width="3" filter="url(#glowPink)"/>
+
+      <!-- Data Dots -->
+      <circle cx="240" cy="100" r="4" fill="#fff"/>
+      <circle cx="440" cy="60" r="4" fill="#fff"/>
+      <circle cx="640" cy="40" r="5" fill="#ec4899"/>
+
+      <text x="40" y="185" fill="#64748b" font-family="sans-serif" font-size="10">Day 1</text>
+      <text x="240" y="185" fill="#64748b" font-family="sans-serif" font-size="10">Day 10</text>
+      <text x="440" y="185" fill="#64748b" font-family="sans-serif" font-size="10">Day 20</text>
+      <text x="615" y="185" fill="#64748b" font-family="sans-serif" font-size="10">Day 30 (Peak)</text>
+    </g>
+
+    <!-- Bottom Feature Cards -->
+    <g transform="translate(25, 320)">
+      <rect x="0" y="0" width="345" height="115" rx="8" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+      <text x="15" y="25" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="600">AI STORY PIPELINE TRACKER</text>
+      <text x="15" y="50" fill="#f1f5f9" font-family="sans-serif" font-size="11">• Illustrated story prompt generation</text>
+      <text x="15" y="70" fill="#f1f5f9" font-family="sans-serif" font-size="11">• Character persistence &amp; voice narration</text>
+      <text x="15" y="90" fill="#34d399" font-family="sans-serif" font-size="11">✓ 12,400+ Stories Generated</text>
+
+      <rect x="365" y="0" width="345" height="115" rx="8" fill="#1b1836" stroke="#2f2b54" stroke-width="1"/>
+      <text x="380" y="25" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">THIRD-PARTY API COST AUDITOR</text>
+      <text x="380" y="50" fill="#f1f5f9" font-family="sans-serif" font-size="11">• LLM token consumption break-down</text>
+      <text x="380" y="70" fill="#f1f5f9" font-family="sans-serif" font-size="11">• Image generation credit optimization</text>
+      <text x="380" y="90" fill="#34d399" font-family="sans-serif" font-size="11">✓ Dynamic caching saved $4.2K/mo</text>
+    </g>
+  </g>
+
+  <!-- Right: Mobile App & Feature Stack -->
+  <g transform="translate(820, 220)">
+    <rect x="0" y="0" width="420" height="460" rx="12" fill="#171430" stroke="#2d2950" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="600">React Native Features &amp; Tools</text>
+
+    <!-- Feature 1 -->
+    <rect x="25" y="65" width="370" height="75" rx="8" fill="#1e1b3d" stroke="#373163" stroke-width="1"/>
+    <text x="40" y="90" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="600">10+ React Native App Features</text>
+    <text x="40" y="110" fill="#94a3b8" font-family="sans-serif" font-size="11">Interactive story reader, audio narration player, bedtime mode</text>
+    <text x="40" y="128" fill="#34d399" font-family="sans-serif" font-size="10">High performance 60fps animations</text>
+
+    <!-- Feature 2 -->
+    <rect x="25" y="155" width="370" height="75" rx="8" fill="#1e1b3d" stroke="#373163" stroke-width="1"/>
+    <text x="40" y="180" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="600">Content Moderation &amp; Safety</text>
+    <text x="40" y="200" fill="#94a3b8" font-family="sans-serif" font-size="11">Automated child-safety filtering and moderation review queue</text>
+    <text x="40" y="218" fill="#38bdf8" font-family="sans-serif" font-size="10">COPPA compliant content gates</text>
+
+    <!-- Feature 3 -->
+    <rect x="25" y="245" width="370" height="75" rx="8" fill="#1e1b3d" stroke="#373163" stroke-width="1"/>
+    <text x="40" y="270" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">Community &amp; Sharing Engine</text>
+    <text x="40" y="290" fill="#94a3b8" font-family="sans-serif" font-size="11">Parent-to-parent story library, multilingual audio translation</text>
+    <text x="40" y="308" fill="#6ee7b7" font-family="sans-serif" font-size="10">Cloud synchronization with REST APIs</text>
+
+    <!-- Feature 4 -->
+    <rect x="25" y="335" width="370" height="100" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="40" y="362" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">Production Impact</text>
+    <text x="40" y="388" fill="#94a3b8" font-family="sans-serif" font-size="11">• 100K+ Play Store downloads worldwide</text>
+    <text x="40" y="410" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600">• Seamless frontend + backend API integration</text>
+  </g>
+</svg>
+

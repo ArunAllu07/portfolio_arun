@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320"/>
+      <stop offset="100%" stop-color="#111f36"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="glowAmber">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="0" y1="600" x2="1280" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="720"/>
+    <line x1="400" y1="0" x2="400" y2="720"/>
+    <line x1="600" y1="0" x2="600" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="1000" y1="0" x2="1000" y2="720"/>
+  </g>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1200" height="60" rx="12" fill="#14233a" stroke="#253a5c" stroke-width="1"/>
+  <circle cx="70" cy="60" r="10" fill="#f59e0b" filter="url(#glowAmber)"/>
+  <text x="95" y="66" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">GRAM PANCHAYAT MANAGEMENT SYSTEM</text>
+  <text x="500" y="65" fill="#64748b" font-family="sans-serif" font-size="13">Digital Governance Portal · Normalized ER Schema · Role-Based Access Control</text>
+
+  <rect x="1060" y="45" width="160" height="30" rx="15" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+  <text x="1075" y="65" fill="#fde68a" font-family="sans-serif" font-size="12" font-weight="600">Python · SQLAlchemy</text>
+
+  <!-- KPI Cards -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="280" height="90" rx="10" fill="#132338" stroke="#203656" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">DIGITIZED CITIZEN SERVICES</text>
+    <text x="20" y="68" fill="#fbbf24" font-family="sans-serif" font-size="28" font-weight="700">12 Modules</text>
+    <text x="180" y="65" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="600">100% Online</text>
+
+    <rect x="306" y="0" width="280" height="90" rx="10" fill="#132338" stroke="#203656" stroke-width="1"/>
+    <text x="326" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">DATABASE INTEGRITY</text>
+    <text x="326" y="68" fill="#38bdf8" font-family="sans-serif" font-size="28" font-weight="700">3NF Schema</text>
+    <text x="495" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">ACID Compliant</text>
+
+    <rect x="613" y="0" width="280" height="90" rx="10" fill="#132338" stroke="#203656" stroke-width="1"/>
+    <text x="633" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">ACCESS CONTROL TIERS</text>
+    <text x="633" y="68" fill="#34d399" font-family="sans-serif" font-size="28" font-weight="700">4 Roles</text>
+    <text x="750" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">RBAC Secured</text>
+
+    <rect x="920" y="0" width="280" height="90" rx="10" fill="#132338" stroke="#203656" stroke-width="1"/>
+    <text x="940" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="500">WELFARE DISBURSEMENTS</text>
+    <text x="940" y="68" fill="#a78bfa" font-family="sans-serif" font-size="28" font-weight="700">₹ 42.5 L</text>
+    <text x="1065" y="65" fill="#94a3b8" font-family="sans-serif" font-size="12">Direct Benefit</text>
+  </g>
+
+  <!-- Left: Governance Dashboard & Citizen Service Requests -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="760" height="460" rx="12" fill="#111f32" stroke="#213550" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="600">Panchayat Administration Portal · Village Demographics &amp; Schemes</text>
+    <text x="25" y="55" fill="#64748b" font-family="sans-serif" font-size="12">Active Session: Block Development Officer (Admin Tier) · District: Telangana</text>
+
+    <!-- Table of Welfare Schemes -->
+    <rect x="25" y="75" width="710" height="235" rx="8" fill="#15263d" stroke="#263d5e" stroke-width="1"/>
+    
+    <!-- Table Header -->
+    <g transform="translate(40, 105)" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="600">
+      <text x="0" y="0">MODULE / SCHEME</text>
+      <text x="180" y="0">BENEFICIARIES</text>
+      <text x="320" y="0">DISBURSEMENT</text>
+      <text x="460" y="0">STATUS</text>
+      <text x="580" y="0">AUDIT LOG</text>
+    </g>
+    <line x1="35" y1="120" x2="725" y2="120" stroke="#294164" stroke-width="1"/>
+
+    <!-- Row 1 -->
+    <g transform="translate(40, 150)" fill="#f1f5f9" font-family="sans-serif" font-size="12">
+      <text x="0" y="0" font-weight="600">Rythu Bandhu Subsidy</text>
+      <text x="180" y="0">642 Farmers</text>
+      <text x="320" y="0">₹ 32,10,000</text>
+      <text x="460" y="0" fill="#34d399">● Completed</text>
+      <text x="580" y="0" fill="#94a3b8">#TX-90412</text>
+    </g>
+    <line x1="35" y1="165" x2="725" y2="165" stroke="#20334e" stroke-width="1"/>
+
+    <!-- Row 2 -->
+    <g transform="translate(40, 195)" fill="#f1f5f9" font-family="sans-serif" font-size="12">
+      <text x="0" y="0" font-weight="600">Rural Health &amp; Vaccination</text>
+      <text x="180" y="0">1,280 Citizens</text>
+      <text x="320" y="0">₹ 4,50,000</text>
+      <text x="460" y="0" fill="#38bdf8">● In Progress</text>
+      <text x="580" y="0" fill="#94a3b8">#TX-90413</text>
+    </g>
+    <line x1="35" y1="210" x2="725" y2="210" stroke="#20334e" stroke-width="1"/>
+
+    <!-- Row 3 -->
+    <g transform="translate(40, 240)" fill="#f1f5f9" font-family="sans-serif" font-size="12">
+      <text x="0" y="0" font-weight="600">Village Asset Infrastructure</text>
+      <text x="180" y="0">18 Projects</text>
+      <text x="320" y="0">₹ 14,80,000</text>
+      <text x="460" y="0" fill="#fbbf24">● Verification</text>
+      <text x="580" y="0" fill="#94a3b8">#TX-90414</text>
+    </g>
+    <line x1="35" y1="255" x2="725" y2="255" stroke="#20334e" stroke-width="1"/>
+
+    <!-- Row 4 -->
+    <g transform="translate(40, 285)" fill="#f1f5f9" font-family="sans-serif" font-size="12">
+      <text x="0" y="0" font-weight="600">Education &amp; Mid-Day Meals</text>
+      <text x="180" y="0">310 Students</text>
+      <text x="320" y="0">₹ 5,90,000</text>
+      <text x="460" y="0" fill="#34d399">● Completed</text>
+      <text x="580" y="0" fill="#94a3b8">#TX-90415</text>
+    </g>
+
+    <!-- Bottom Quick Stats -->
+    <g transform="translate(25, 325)">
+      <rect x="0" y="0" width="710" height="110" rx="8" fill="#14243b" stroke="#253d5e" stroke-width="1"/>
+      <text x="20" y="30" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">Census &amp; Citizen Registry Summary</text>
+      <text x="20" y="55" fill="#94a3b8" font-family="sans-serif" font-size="11">• Total Village Population: 4,892 (2,410 M / 2,482 F) • 1,120 Registered Households</text>
+      <text x="20" y="75" fill="#94a3b8" font-family="sans-serif" font-size="11">• Asset Registry: 14 Community Halls, 32 Borewells, 8 Solar Grid Nodes</text>
+      <text x="20" y="95" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600">✓ Normalized Relational Integrity Enforced via SQLAlchemy ORM</text>
+    </g>
+  </g>
+
+  <!-- Right: RBAC Architecture & Schema Design -->
+  <g transform="translate(820, 220)">
+    <rect x="0" y="0" width="420" height="460" rx="12" fill="#111f32" stroke="#213550" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="600">Database &amp; RBAC Architecture</text>
+
+    <!-- Tier 1 -->
+    <rect x="25" y="65" width="370" height="75" rx="8" fill="#172840" stroke="#2a4369" stroke-width="1"/>
+    <text x="40" y="90" fill="#fbbf24" font-family="sans-serif" font-size="12" font-weight="600">1. Citizen Tier (Self-Service)</text>
+    <text x="40" y="110" fill="#94a3b8" font-family="sans-serif" font-size="11">Apply for welfare schemes, certificates, view census status</text>
+    <text x="40" y="128" fill="#38bdf8" font-family="sans-serif" font-size="10">JWT Token Auth + Phone OTP</text>
+
+    <!-- Tier 2 -->
+    <rect x="25" y="155" width="370" height="75" rx="8" fill="#172840" stroke="#2a4369" stroke-width="1"/>
+    <text x="40" y="180" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">2. Employee / Operator Tier</text>
+    <text x="40" y="200" fill="#94a3b8" font-family="sans-serif" font-size="11">Validate applications, record vaccination schedules, update assets</text>
+    <text x="40" y="218" fill="#34d399" font-family="sans-serif" font-size="10">Scoped Read/Write permissions</text>
+
+    <!-- Tier 3 -->
+    <rect x="25" y="245" width="370" height="75" rx="8" fill="#172840" stroke="#2a4369" stroke-width="1"/>
+    <text x="40" y="270" fill="#a78bfa" font-family="sans-serif" font-size="12" font-weight="600">3. Admin &amp; Monitor Tier</text>
+    <text x="40" y="290" fill="#94a3b8" font-family="sans-serif" font-size="11">Disbursement approval, audit trail inspection, schema migration</text>
+    <text x="40" y="308" fill="#6ee7b7" font-family="sans-serif" font-size="10">Full system oversight &amp; analytics</text>
+
+    <!-- Tier 4 -->
+    <rect x="25" y="335" width="370" height="100" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="40" y="362" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="600">Relational Database Specs</text>
+    <text x="40" y="388" fill="#94a3b8" font-family="sans-serif" font-size="11">• Normalized SQL tables across 5 domains</text>
+    <text x="40" y="410" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600">• SQLAlchemy ORM models with foreign key constraints</text>
+  </g>
+</svg>
+

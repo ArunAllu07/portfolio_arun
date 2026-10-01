@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070d18"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Matrix/Terminal Grid -->
+  <g stroke="#10b981" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="0" y1="600" x2="1280" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="720"/>
+    <line x1="400" y1="0" x2="400" y2="720"/>
+    <line x1="600" y1="0" x2="600" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="1000" y1="0" x2="1000" y2="720"/>
+  </g>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1200" height="60" rx="12" fill="#111c2e" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="70" cy="60" r="10" fill="#10b981" filter="url(#glowGreen)"/>
+  <text x="95" y="66" fill="#f8fafc" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="17" font-weight="700">TCP_SOCKET_ENCRYPTION_SYSTEM.c</text>
+  <text x="500" y="65" fill="#64748b" font-family="monospace" font-size="13">Client-Server Socket Architecture · 26-Char Key Substitution Cipher · POSIX fork()</text>
+
+  <rect x="1080" y="45" width="140" height="30" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="1098" y="65" fill="#6ee7b7" font-family="monospace" font-size="12" font-weight="700">PORT: 8080 [OPEN]</text>
+
+  <!-- Metrics -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="280" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="monospace" font-size="11">CIPHER ALGORITHM</text>
+    <text x="20" y="68" fill="#34d399" font-family="monospace" font-size="24" font-weight="700">26-Char Map</text>
+    <text x="190" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Case Preserving</text>
+
+    <rect x="306" y="0" width="280" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="326" y="32" fill="#94a3b8" font-family="monospace" font-size="11">CONCURRENCY MODEL</text>
+    <text x="326" y="68" fill="#38bdf8" font-family="monospace" font-size="24" font-weight="700">fork() Multi-Proc</text>
+    <text x="495" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Per-Client</text>
+
+    <rect x="613" y="0" width="280" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="633" y="32" fill="#94a3b8" font-family="monospace" font-size="11">PROTOCOL</text>
+    <text x="633" y="68" fill="#a78bfa" font-family="monospace" font-size="24" font-weight="700">TCP / AF_INET</text>
+    <text x="765" y="65" fill="#94a3b8" font-family="monospace" font-size="11">SOCK_STREAM</text>
+
+    <rect x="920" y="0" width="280" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="940" y="32" fill="#94a3b8" font-family="monospace" font-size="11">STREAM PROCESSING</text>
+    <text x="940" y="68" fill="#facc15" font-family="monospace" font-size="24" font-weight="700">Chunked I/O</text>
+    <text x="1075" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Zero Data Loss</text>
+  </g>
+
+  <!-- Left: Interactive Terminal & Stream Flow -->
+  <g transform="translate(40, 220)">
+    <rect x="0" y="0" width="760" height="460" rx="12" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Terminal Title Bar -->
+    <rect x="0" y="0" width="760" height="36" rx="12" fill="#162032"/>
+    <circle cx="20" cy="18" r="6" fill="#ef4444"/>
+    <circle cx="38" cy="18" r="6" fill="#f59e0b"/>
+    <circle cx="56" cy="18" r="6" fill="#10b981"/>
+    <text x="80" y="22" fill="#94a3b8" font-family="monospace" font-size="12">server@linux: ~/socket-cipher/server</text>
+
+    <!-- Terminal Output -->
+    <g transform="translate(25, 60)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">
+      <text x="0" y="20" fill="#10b981">$ gcc server.c -o server &amp;&amp; ./server 8080</text>
+      <text x="0" y="45" fill="#64748b">[+] Socket created successfully (AF_INET, SOCK_STREAM)</text>
+      <text x="0" y="70" fill="#64748b">[+] Server socket bound to 127.0.0.1:8080</text>
+      <text x="0" y="95" fill="#38bdf8">[+] Server listening for incoming connections (Backlog: 10)...</text>
+      
+      <text x="0" y="130" fill="#a78bfa">[+] Connection accepted from 127.0.0.1:54210 [PID 14209]</text>
+      <text x="0" y="155" fill="#facc15">[&gt;] Receiving payload: "payload_data.txt" (Size: 4,096 bytes)</text>
+      
+      <!-- Hex stream box -->
+      <rect x="0" y="175" width="710" height="90" rx="6" fill="#0d1424" stroke="#1e293b"/>
+      <text x="15" y="200" fill="#64748b">00000000: 5468 6520 7175 6963 6b20 6272 6f77 6e20  The quick brown </text>
+      <text x="15" y="222" fill="#64748b">00000010: 666f 7820 6a75 6d70 7320 6f76 6572 2074  fox jumps over t</text>
+      <text x="15" y="244" fill="#34d399">ENCRYPTED: Wkh txlfn eurzq ira mxpsv ryhu wkh odcb  [KEY: SHIFT-X26]</text>
+
+      <text x="0" y="295" fill="#34d399">[✓] Substitution-Cipher applied: 4,096 / 4,096 bytes processed</text>
+      <text x="0" y="320" fill="#38bdf8">[&gt;] Transmitting encrypted file "payload_data.enc" back to client socket</text>
+      <text x="0" y="345" fill="#64748b">[+] Child process PID 14209 terminated gracefully. Socket closed.</text>
+      <text x="0" y="370" fill="#10b981">[+] Waiting for next connection...</text>
+    </g>
+  </g>
+
+  <!-- Right: Architecture & C Socket Primitives -->
+  <g transform="translate(820, 220)">
+    <rect x="0" y="0" width="420" height="460" rx="12" fill="#0b101c" stroke="#1e293b" stroke-width="1"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="monospace" font-size="14" font-weight="700">// System Architecture</text>
+
+    <rect x="25" y="65" width="370" height="75" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <text x="40" y="90" fill="#34d399" font-family="monospace" font-size="12" font-weight="700">1. POSIX Socket Lifecycle</text>
+    <text x="40" y="110" fill="#94a3b8" font-family="monospace" font-size="11">socket() → bind() → listen() → accept()</text>
+    <text x="40" y="128" fill="#64748b" font-family="monospace" font-size="10">Non-blocking file descriptor I/O streaming</text>
+
+    <rect x="25" y="155" width="370" height="75" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <text x="40" y="180" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">2. Concurrent Process Forking</text>
+    <text x="40" y="200" fill="#94a3b8" font-family="monospace" font-size="11">fork() spawns isolated child worker per client</text>
+    <text x="40" y="218" fill="#64748b" font-family="monospace" font-size="10">Prevents head-of-line blocking on large transfers</text>
+
+    <rect x="25" y="245" width="370" height="75" rx="8" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    <text x="40" y="270" fill="#a78bfa" font-family="monospace" font-size="12" font-weight="700">3. 26-Char Key Substitution</text>
+    <text x="40" y="290" fill="#94a3b8" font-family="monospace" font-size="11">Direct ASCII index hashing for O(1) byte ciphering</text>
+    <text x="40" y="308" fill="#64748b" font-family="monospace" font-size="10">Preserves ASCII whitespace &amp; casing bounds</text>
+
+    <rect x="25" y="335" width="370" height="100" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="40" y="362" fill="#f8fafc" font-family="monospace" font-size="12" font-weight="700">Core Network Properties</text>
+    <text x="40" y="388" fill="#94a3b8" font-family="monospace" font-size="11">• Reliable byte-stream over TCP</text>
+    <text x="40" y="410" fill="#34d399" font-family="monospace" font-size="11">• Clean socket descriptor teardown &amp; sigchld handling</text>
+  </g>
+</svg>
+
