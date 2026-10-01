@@ -1,43 +1,50 @@
 # Arun Kethavath — Portfolio
 
-Personal portfolio website built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
+Personal portfolio for my work in data analytics, machine learning, and applied AI. I am an undergraduate at IIT Kharagpur, studying Metallurgical and Materials Engineering with a micro-specialization in Artificial Intelligence and Applications.
 
-## View the portfolio
+## Portfolio website
 
-The site has not been published yet, so there is no public portfolio URL to link here. After deploying it, replace this note with your live URL, for example:
+The website is configured to publish to GitHub Pages at **[arunallu07.github.io/portfolio_arun](https://arunallu07.github.io/portfolio_arun/)**. The link will show the site after GitHub Pages is enabled and the first deployment completes.
 
-```md
-## Live portfolio
-[View my portfolio](https://your-deployed-site.example)
-```
+### Enable the first deployment
+
+1. Open this repository on GitHub and go to **Settings → Pages**.
+2. Under **Build and deployment**, set the source to **GitHub Actions**.
+3. Push the project to the `main` branch, or run **Deploy portfolio to GitHub Pages** from the **Actions** tab.
+4. Wait for the workflow to finish successfully, then open the portfolio link above.
+
+Future pushes to `main` automatically rebuild and publish the site. The deployment workflow lives in `.github/workflows/deploy-pages.yml`.
+
+## What you’ll find
+
+- An introduction, background, and education
+- Data and machine learning skills
+- Internship experience and entrepreneurship work
+- Selected analytics, machine learning, and software projects
+- Contact and social links
 
 ## Run locally
 
-You need Node.js and npm installed.
+Install [Node.js](https://nodejs.org/) and npm, then run these commands from the project directory:
 
 ```sh
 npm install
 npm run dev
 ```
 
-Vite prints a local address (usually `http://localhost:8080`) in the terminal. Open that address to preview the site on your computer; it is not public.
+Open the local URL printed in your terminal (usually `http://localhost:8080`). This preview is only available on your computer.
 
-To create a production build:
+To create a production build locally:
 
 ```sh
 npm run build
 ```
 
-The generated website files are placed in `dist/`.
+The generated files are placed in `dist/`.
 
-## Deploy
+## Built with
 
-Deploy this Vite project with a static-site host such as Netlify, Vercel, or GitHub Pages. Use `npm run build` as the build command and `dist` as the publish/output directory. Once deployment finishes, copy the host's public URL into the **View the portfolio** section above.
-
-## Technologies
-
-- React
-- TypeScript
+- React and TypeScript
 - Vite
 - Tailwind CSS
 - shadcn/ui
