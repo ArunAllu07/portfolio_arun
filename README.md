@@ -1,73 +1,43 @@
-# Welcome to your Lovable project
+# Arun Kethavath — Portfolio
 
-## Project info
+Personal portfolio website built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## View the portfolio
 
-## How can I edit this code?
+The site has not been published yet, so there is no public portfolio URL to link here. After deploying it, replace this note with your live URL, for example:
 
-There are several ways of editing your application.
+```md
+## Live portfolio
+[View my portfolio](https://your-deployed-site.example)
+```
 
-**Use Lovable**
+## Run locally
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+You need Node.js and npm installed.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Vite prints a local address (usually `http://localhost:8080`) in the terminal. Open that address to preview the site on your computer; it is not public.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To create a production build:
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The generated website files are placed in `dist/`.
 
-## What technologies are used for this project?
+## Deploy
 
-This project is built with:
+Deploy this Vite project with a static-site host such as Netlify, Vercel, or GitHub Pages. Use `npm run build` as the build command and `dist` as the publish/output directory. Once deployment finishes, copy the host's public URL into the **View the portfolio** section above.
 
-- Vite
-- TypeScript
+## Technologies
+
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- shadcn/ui
